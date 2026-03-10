@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="navbar">
+        <a href="#home" class="logo">MyPortfolio</a>
+        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content reveal">
+        <h1>Hi, I'm Alex</h1>
+        <p>
+          A creative web developer focused on building delightful digital
+          experiences.
+        </p>
+        <a class="cta" href="#projects">View My Work</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="about section reveal" id="about">
+        <h2>About Me</h2>
+        <p>
+          I build modern, user-friendly websites and applications with clean,
+          maintainable code. I love turning ideas into real products and
+          continuously learning new technologies.
+        </p>
+      </section>
+
+      <section class="projects section" id="projects">
+        <h2 class="reveal">Projects</h2>
+        <div class="project-grid">
+          <article class="card reveal">
+            <h3>Project One</h3>
+            <p>
+              A responsive landing page with conversion-focused sections and fast
+              load performance.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Project Two</h3>
+            <p>
+              A task management web app with drag-and-drop features and a clean
+              dashboard interface.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Project Three</h3>
+            <p>
+              An e-commerce UI prototype featuring product filters, cart flow,
+              and mobile-first design.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="reveal">Contact</h2>
+        <form class="contact-form reveal" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tell me about your project..."
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
